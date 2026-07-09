@@ -162,7 +162,6 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      border: 4px solid transparent; /* ←縁取りのベース */
       border-radius: var(--radius);
       box-shadow: var(--shadow);
       box-sizing: border-box;
@@ -172,7 +171,7 @@
 
     .class-card img {
       width: 100%;
-      aspect-ratio: 4 / 3; /* ←比率統一でバランス安定 */
+      aspect-ratio: 4 / 3;
       object-fit: cover;
       object-position: center;
       border-radius: var(--radius);
@@ -182,13 +181,13 @@
     /* ステップアップクラス（青背景＋黄色縁取り） */
     .class-stepup {
       background: var(--stepup-blue);
-      border-color: var(--stepup-border-yellow);
+      border: 4px solid var(--stepup-border-yellow);
     }
 
     /* アドバンスクラス（薄黄色背景＋青縁取り） */
     .class-advance {
       background: var(--advance-yellow);
-      border-color: var(--advance-border-blue);
+      border: 4px solid var(--advance-border-blue);
     }
 
     /* ====== アクセス ====== */
@@ -274,92 +273,4 @@
         渋谷区・新宿区のイベントやチアダンスオープン大会参加を目指します！
       </p>
 
-      <button class="btn btn-primary" onclick="scrollToId('contact')">無料体験に申し込む</button>
-      <button class="btn btn-ghost" onclick="scrollToId('classes')">クラスを見る</button>
-
-    </div>
-  </section>
-
-  <!-- ====== CLASSES ====== -->
-  <section id="classes">
-    <div class="inner">
-      <h2>クラス紹介</h2>
-      <p class="lead">毎週金曜日に2つのクラスを開講しています。</p>
-
-      <div class="class-grid">
-
-        <!-- ステップアップクラス -->
-        <div class="class-card class-stepup">
-          <img src="ailes_kids.jpg" alt="ステップアップクラス">
-          <h3>ステップアップクラス</h3>
-          <p>対象：4才〜小学1年生</p>
-          <p>毎週金曜日 16:00〜17:15</p>
-          <p><strong>料金：月額 6,000円（月4回）</strong></p>
-          <p>チアの基礎を楽しく学びながら、体を動かすことが好きになるクラスです。</p>
-        </div>
-
-        <!-- アドバンスクラス -->
-        <div class="class-card class-advance">
-          <img src="ailes_advance.jpg" alt="アドバンスクラス">
-          <h3>アドバンスクラス</h3>
-          <p>対象：小学2年生〜中学生</p>
-          <p>毎週金曜日 17:15〜18:30</p>
-          <p><strong>料金：月額 6,000円（月4回）</strong></p>
-          <p>フォーメーションや表現力を高め、イベント出演も目指す本格クラスです。</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ====== ACCESS ====== -->
-  <section id="access">
-    <div class="inner">
-      <h2>アクセス</h2>
-      <p class="lead">レッスンは「地域交流センター西原」で行っています。</p>
-
-      <div class="access-grid">
-        <div class="access-box">
-          <h3>地域交流センター西原</h3>
-          <p>東京都渋谷区西原１丁目</p>
-
-          <div style="width:100%; overflow:hidden;">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3263.6488910804273!2d139.67597762071682!3d35.674410517187916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f33a2d81e8fd%3A0xd89007a644e33bdf!2z5Zyw5Z-f5Lqk5rWB44K744Oz44K_44O86KW_5Y6f!5e0!3m2!1sja!2sjp!4v1783257170310!5m2!1sja!2sjp"
-              width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
-            </iframe>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ====== CONTACT ====== -->
-  <section id="contact">
-    <div class="inner">
-      <h2>お問い合わせ・無料体験</h2>
-      <p class="lead">お気軽にお問い合わせください。</p>
-
-      <div style="width:100%; overflow:hidden;">
-        <iframe 
-          src="https://docs.google.com/forms/d/e/1FAIpQLScAuTXg1XXfXJrUNRoZBSF8W1zVzKAcMMhR5ly_NE1QD2GGDg/viewform?embedded=true"
-          width="100%" 
-          height="1400" 
-          frameborder="0" 
-          marginheight="0" 
-          marginwidth="0"
-          style="border:0; border-radius: 12px;">
-          読み込んでいます…
-        </iframe>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ====== FOOTER ====== -->
-  <footer>
-    © 2026 AILES / Hatagaya.
-  </footer>
-
-</body>
-</html>
+      <
