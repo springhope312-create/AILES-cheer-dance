@@ -152,26 +152,38 @@
 
     /* ====== クラス紹介 ====== */
     .class-grid {
-  display: flex;
-  gap: 20px;
-  align-items: stretch; /* 高さを揃える */
-}
+      display: flex;
+      gap: 24px;
+      align-items: stretch;
+    }
 
-.class-card img {
-  width: 100%;
-  height: 250px; /* 固定高さ */
-  object-fit: cover;
-  object-position: center top;
-  aspect-ratio: 4 / 3; /* 比率を統一 */
-}
+    .class-card {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 4px solid transparent; /* ←縁取りのベース */
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      box-sizing: border-box;
+      height: 100%;
+      padding: 20px;
+    }
 
-.class-card {
-  flex: 1; /* 均等幅 */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+    .class-card img {
+      width: 100%;
+      aspect-ratio: 4 / 3; /* ←比率統一でバランス安定 */
+      object-fit: cover;
+      object-position: center;
+      border-radius: var(--radius);
+      margin-bottom: 10px;
+    }
 
+    /* ステップアップクラス（青背景＋黄色縁取り） */
+    .class-stepup {
+      background: var(--stepup-blue);
+      border-color: var(--stepup-border-yellow);
+    }
 
     /* アドバンスクラス（薄黄色背景＋青縁取り） */
     .class-advance {
@@ -211,7 +223,7 @@
       .hero-team-small { font-size: 1rem; }
 
       .class-grid {
-        grid-template-columns: 1fr;
+        flex-direction: column;
       }
     }
   </style>
@@ -259,7 +271,7 @@
 
       <p class="lead">
         AILES（エールス）は、仲間と共にチアダンスを楽しみ、<br>
-        渋谷区.新宿区のイベントやチアダンスオープン大会参加を目指します！<br>
+        渋谷区・新宿区のイベントやチアダンスオープン大会参加を目指します！
       </p>
 
       <button class="btn btn-primary" onclick="scrollToId('contact')">無料体験に申し込む</button>
@@ -276,7 +288,7 @@
 
       <div class="class-grid">
 
-        <!-- ステップアップクラス（青背景＋黄色縁取り） -->
+        <!-- ステップアップクラス -->
         <div class="class-card class-stepup">
           <img src="ailes_kids.jpg" alt="ステップアップクラス">
           <h3>ステップアップクラス</h3>
@@ -286,7 +298,7 @@
           <p>チアの基礎を楽しく学びながら、体を動かすことが好きになるクラスです。</p>
         </div>
 
-        <!-- アドバンスクラス（薄黄色背景＋青縁取り） -->
+        <!-- アドバンスクラス -->
         <div class="class-card class-advance">
           <img src="ailes_advance.jpg" alt="アドバンスクラス">
           <h3>アドバンスクラス</h3>
@@ -312,7 +324,9 @@
           <p>東京都渋谷区西原１丁目</p>
 
           <div style="width:100%; overflow:hidden;">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3263.6488910804273!2d139.67597762071682!3d35.674410517187916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f33a2d81e8fd%3A0xd89007a644e33bdf!2z5Zyw5Z-f5Lqk5rWB44K744Oz44K_44O86KW_5Y6f!5e0!3m2!1sja!2sjp!4v1783257170310!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3263.6488910804273!2d139.67597762071682!3d35.674410517187916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f33a2d81e8fd%3A0xd89007a644e33bdf!2z5Zyw5Z-f5Lqk5rWB44K744Oz44K_44O86KW_5Y6f!5e0!3m2!1sja!2sjp!4v1783257170310!5m2!1sja!2sjp"
+              width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
           </div>
         </div>
       </div>
