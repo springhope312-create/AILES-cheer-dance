@@ -5,27 +5,19 @@
   <title>AILES | 幡ヶ谷キッズチアダンス</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-    /* ====== 基本設定 ====== */
     :root {
       --purple: #a855f7;
       --purple-dark: #7c3aed;
       --pink: #f472b6;
-
-      /* クラス色（背景） */
-      --stepup-blue: #b3e0ff;      /* 背景より少し濃い青 */
-      --advance-yellow: #fffde0;   /* より薄い黄色 */
-
-      /* クラス色（縁取り） */
-      --stepup-border-yellow: #f7e27d; /* ステップアップの縁取り（黄色） */
-      --advance-border-blue: #8cc9ff;  /* アドバンスの縁取り（青） */
-
-      /* チーム名色 */
+      --stepup-blue: #b3e0ff;
+      --advance-yellow: #fffde0;
+      --stepup-border-yellow: #f7e27d;
+      --advance-border-blue: #8cc9ff;
       --yellow-border: #f7d94c;
       --blue-logo: #2a6fd4;
-
       --text: #1f2933;
       --muted: #6b7280;
-      --bg-soft: #e0f4ff; /* 全体背景の水色 */
+      --bg-soft: #e0f4ff;
       --radius: 16px;
       --shadow: 0 10px 25px rgba(0,0,0,0.1);
     }
@@ -37,9 +29,6 @@
       background: var(--bg-soft);
     }
 
-    img { max-width: 100%; display: block; }
-
-    /* ====== ヘッダー ====== */
     header {
       position: sticky;
       top: 0;
@@ -78,7 +67,6 @@
       color: #fff;
     }
 
-    /* ====== セクション共通 ====== */
     section {
       padding: 70px 20px;
     }
@@ -99,7 +87,6 @@
       line-height: 1.7;
     }
 
-    /* ====== HERO ====== */
     .hero {
       text-align: center;
       padding-top: 80px;
@@ -167,6 +154,8 @@
       box-sizing: border-box;
       height: 100%;
       padding: 20px;
+      position: relative;
+      z-index: 1;
     }
 
     .class-card img {
@@ -207,7 +196,6 @@
       margin: auto;
     }
 
-    /* ====== フッター ====== */
     footer {
       text-align: center;
       padding: 30px 20px;
@@ -215,15 +203,11 @@
       border-top: 1px solid rgba(0,0,0,0.1);
     }
 
-    /* ====== スマホ最適化 ====== */
     @media (max-width: 600px) {
       .hero-title { font-size: 1.8rem; }
       .hero-team { font-size: 2rem; }
       .hero-team-small { font-size: 1rem; }
-
-      .class-grid {
-        flex-direction: column;
-      }
+      .class-grid { flex-direction: column; }
     }
   </style>
 
@@ -238,7 +222,6 @@
 
 <body>
 
-  <!-- ====== HEADER ====== -->
   <header>
     <div class="header-inner">
       <div class="logo-area">
@@ -257,20 +240,15 @@
     </div>
   </header>
 
-  <!-- ====== HERO ====== -->
-  <section id="top">
-    <div class="inner hero">
-
-      <img src="AILES_logo.jpg" alt="AILES ロゴ" style="width: 70%; max-width: 420px; margin: 0 auto 30px;">
-
+  <section id="top" class="hero">
+    <div class="inner">
+      <img src="AILES_logo.jpg" alt="AILES ロゴ" style="width:70%;max-width:420px;margin:0 auto 30px;">
       <h1 class="hero-title">幡ヶ谷で楽しくチアダンス♪</h1>
-
       <div class="hero-team">AILES</div>
       <div class="hero-team-small">（エールス）</div>
-
       <p class="lead">
         AILES（エールス）は、仲間と共にチアダンスを楽しみ、<br>
         渋谷区・新宿区のイベントやチアダンスオープン大会参加を目指します！
       </p>
-
-      <
+      <button class="btn btn-primary" onclick="scrollToId('contact')">無料体験に申し込む</button>
+      <button
