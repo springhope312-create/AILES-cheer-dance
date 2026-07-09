@@ -152,28 +152,26 @@
 
     /* ====== クラス紹介 ====== */
     .class-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
+  display: flex;
+  gap: 20px;
+  align-items: stretch; /* 高さを揃える */
+}
 
-    .class-card {
-      padding: 20px;
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      border: 4px solid transparent; /* 縁取り用 */
-    }
+.class-card img {
+  width: 100%;
+  height: 260px; /* 写真高さを統一 */
+  object-fit: cover; /* はみ出し防止 */
+  border-radius: var(--radius);
+  margin-bottom: 10px;
+}
 
-    .class-card img {
-      border-radius: var(--radius);
-      margin-bottom: 10px;
-    }
+.class-card {
+  flex: 1; /* 均等幅 */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-    /* ステップアップクラス（青背景＋黄色縁取り） */
-    .class-stepup {
-      background: var(--stepup-blue);
-      border-color: var(--stepup-border-yellow);
-    }
 
     /* アドバンスクラス（薄黄色背景＋青縁取り） */
     .class-advance {
