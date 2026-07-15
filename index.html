@@ -10,15 +10,12 @@
       --purple-dark: #7c3aed;
       --pink: #f472b6;
 
-      /* クラス色（背景） */
       --stepup-blue: #b3e0ff;
       --advance-yellow: #fffde0;
 
-      /* クラス色（縁取り） */
       --stepup-border-yellow: #f7e27d;
       --advance-border-blue: #8cc9ff;
 
-      /* チーム名色 */
       --yellow-border: #f7d94c;
       --blue-logo: #2a6fd4;
 
@@ -170,13 +167,11 @@
       margin-bottom: 10px;
     }
 
-    /* ステップアップ（青背景＋黄色縁取り） */
     .class-stepup {
       background: var(--stepup-blue);
       border: 4px solid var(--stepup-border-yellow);
     }
 
-    /* アドバンス（薄黄色背景＋青縁取り） */
     .class-advance {
       background: var(--advance-yellow);
       border: 4px solid var(--advance-border-blue);
@@ -234,6 +229,12 @@
         <button onclick="scrollToId('top')">トップ</button>
         <button onclick="scrollToId('classes')">クラス紹介</button>
         <button onclick="scrollToId('access')">アクセス</button>
+
+        <!-- ★ Instagramボタン追加 ★ -->
+        <button onclick="window.open('https://www.instagram.com/lilac_kidscheer?utm_source=qr','_blank')">
+          Instagram
+        </button>
+
         <button class="nav-cta" onclick="scrollToId('contact')">お問い合わせ</button>
       </nav>
     </div>
@@ -280,6 +281,33 @@
         </div>
 
       </div>
+    </div>
+  </section>
+
+  <!-- ★ Instagram紹介セクション追加 ★ -->
+  <section id="instagram">
+    <div class="inner" style="text-align:center;">
+      <h2 style="color:var(--purple); font-size:1.8rem; margin-bottom:10px;">
+        Instagram
+      </h2>
+      <p class="lead">
+        レッスンの様子やイベント写真を更新しています♪
+      </p>
+
+      <a href="https://www.instagram.com/lilac_kidscheer?utm_source=qr"
+         target="_blank"
+         style="
+           display:inline-block;
+           padding:12px 28px;
+           background:linear-gradient(135deg, var(--purple), var(--pink));
+           color:#fff;
+           border-radius:999px;
+           font-weight:600;
+           text-decoration:none;
+           box-shadow:var(--shadow);
+         ">
+        Instagramを見る
+      </a>
     </div>
   </section>
 
