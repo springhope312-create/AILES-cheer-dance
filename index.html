@@ -10,12 +10,15 @@
       --purple-dark: #7c3aed;
       --pink: #f472b6;
 
+      /* クラス色（背景） */
       --stepup-blue: #b3e0ff;
       --advance-yellow: #fffde0;
 
+      /* クラス色（縁取り） */
       --stepup-border-yellow: #f7e27d;
       --advance-border-blue: #8cc9ff;
 
+      /* チーム名色 */
       --yellow-border: #f7d94c;
       --blue-logo: #2a6fd4;
 
@@ -167,11 +170,13 @@
       margin-bottom: 10px;
     }
 
+    /* ステップアップ（青背景＋黄色縁取り） */
     .class-stepup {
       background: var(--stepup-blue);
       border: 4px solid var(--stepup-border-yellow);
     }
 
+    /* アドバンス（薄黄色背景＋青縁取り） */
     .class-advance {
       background: var(--advance-yellow);
       border: 4px solid var(--advance-border-blue);
@@ -229,12 +234,6 @@
         <button onclick="scrollToId('top')">トップ</button>
         <button onclick="scrollToId('classes')">クラス紹介</button>
         <button onclick="scrollToId('access')">アクセス</button>
-
-        <!-- ★ Instagramボタン追加 ★ -->
-        <button onclick="window.open('https://www.instagram.com/lilac_kidscheer?utm_source=qr','_blank')">
-          Instagram
-        </button>
-
         <button class="nav-cta" onclick="scrollToId('contact')">お問い合わせ</button>
       </nav>
     </div>
@@ -284,41 +283,14 @@
     </div>
   </section>
 
-  <!-- ★ Instagram紹介セクション追加 ★ -->
-  <section id="instagram">
-    <div class="inner" style="text-align:center;">
-      <h2 style="color:var(--purple); font-size:1.8rem; margin-bottom:10px;">
-        Instagram
-      </h2>
-      <p class="lead">
-        レッスンの様子やイベント写真を更新しています♪
-      </p>
-
-      <a href="https://www.instagram.com/lilac_kidscheer?utm_source=qr"
-         target="_blank"
-         style="
-           display:inline-block;
-           padding:12px 28px;
-           background:linear-gradient(135deg, var(--purple), var(--pink));
-           color:#fff;
-           border-radius:999px;
-           font-weight:600;
-           text-decoration:none;
-           box-shadow:var(--shadow);
-         ">
-        Instagramを見る
-      </a>
-    </div>
-  </section>
-
   <section id="access">
     <div class="inner">
       <h2>アクセス</h2>
-      <p class="lead">レッスンは「西小岩コミュニティ会館」で行っています。</p>
+      <p class="lead">レッスンは「地域交流センター西原」で行っています。</p>
 
       <div class="access-grid">
         <div class="access-box">
-          <h3>西小岩コミュニティ会館</h3>
+          <h3>地域交流センター西原</h3>
           <p>東京都渋谷区西原１丁目</p>
 
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3263.6488910804273!2d139.67597762071682!3d35.674410517187916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f33a2d81e8fd%3A0xd89007a644e33bdf!2z5Zyw5Z-f5Lqk5rWB44K744Oz44K_44O86KW_5Y6f!5e0!3m2!1sja!2sjp!4v1783257170310!5m2!1sja!2sjp"
@@ -362,7 +334,7 @@
         width:100%;
         max-width:480px;
       ">
-        <strong style="font-size:1.2rem;">小岩エリア　Lilac</strong><br>
+        <strong style="font-size:1.2rem;">＊小岩エリア　Lilac</strong><br>
         <a href="https://springhope312-create.github.io/lilac-cheer-dance/"
            target="_blank"
            style="color:var(--purple-dark); font-weight:600;">
@@ -379,7 +351,7 @@
         width:100%;
         max-width:480px;
       ">
-        <strong style="font-size:1.2rem;">所沢エリア　Brights</strong><br>
+        <strong style="font-size:1.2rem;">＊所沢エリア　Brights</strong><br>
         <a href="https://springhope312-create.github.io/brights-cheer-dance/"
            target="_blank"
            style="color:var(--purple-dark); font-weight:600;">
@@ -387,14 +359,19 @@
         </a>
       </div>
 
-      <!-- AILES -->
-      <div style="background:#fff; padding:24px; border-radius:16px; box-shadow:var(--shadow); width:100%; max-width:480px; color:#000;">
-        <strong style="font-size:1.2rem;">幡ヶ谷エリア AILES</strong><br>
-        <a href="https://springhope312-create.github.io/AILES-cheer-dance/"
-           target="_blank"
-           style="color:var(--purple-dark); font-weight:600;">
-          AILES ホームページを見る
-        </a>
+      <!-- AILES（自チーム） -->
+      <div style="
+        background:#fff;
+        padding:24px;
+        border-radius:16px;
+        box-shadow:0 10px 25px rgba(0,0,0,0.1);
+        width:100%;
+        max-width:480px;
+      ">
+        <strong style="font-size:1.2rem;">＊幡ヶ谷エリア　AILES</strong><br>
+        <span style="color:var(--muted); font-size:0.9rem;">
+          このページが公式サイトです
+        </span>
       </div>
 
       <!-- Twinkles -->
@@ -406,7 +383,7 @@
         width:100%;
         max-width:480px;
       ">
-        <strong style="font-size:1.2rem;">板橋エリア　Twinkles</strong><br>
+        <strong style="font-size:1.2rem;">＊板橋エリア　Twinkles</strong><br>
         <a href="https://springhope312-create.github.io/Twinkles-cheer-dance/"
            target="_blank"
            style="color:var(--purple-dark); font-weight:600;">
